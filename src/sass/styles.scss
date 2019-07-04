@@ -1,4 +1,9 @@
 /*
    Import partials below
 */
-@import './normalize';
+@import './normalize.scss';
+
+@import './constatnts/constants';
+
+@import './utils/utils';
+@import './components/components';
