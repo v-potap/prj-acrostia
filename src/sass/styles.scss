@@ -2,8 +2,16 @@
    Import partials below
 */
 @import './normalize.scss';
-
 @import './constatnts/constants';
-
 @import './utils/utils';
 @import './components/components';
+@import './base';
+@import './components/header';
+@import './components/container';
+@import './components/site-logo';
+@import './components/nav-list';
+@import './components/nav-item';
+@import './components/nav_link';
+@import './components/site-nav';
+@import './components/page_work'
+
