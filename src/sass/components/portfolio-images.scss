@@ -1,0 +1,35 @@
+.portfolio-images {
+  list-style: none;
+}
+
+.images-item {
+  position: relative;
+  z-index: 1;
+  width: 260px;
+}
+
+.images-item__description {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-family: "Lato";
+  color: rgb(114, 114, 114);
+  text-transform: uppercase;
+  line-height: 4.143;
+  text-align: center;
+  z-index: 2;
+}
+
+.images-item__arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 37px;
+    height: 19px;
+    z-index: 3;
+    
+}
+
