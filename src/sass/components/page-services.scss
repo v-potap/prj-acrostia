@@ -1,0 +1,11 @@
+.page-services {
+  @extend %page__background--responsive;
+  background-image: url('../../images/bg-services-pic@1X.png'),
+    url('../images/bg-services@1X.png');
+
+    .nav-item:nth-of-type(2) {
+        border-radius: 0 0 5px 5px;
+        background-color: rgba(256, 256, 256, 0.3);
+      }
+}
+

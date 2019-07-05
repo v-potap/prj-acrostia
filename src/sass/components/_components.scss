@@ -1,3 +1,15 @@
-@import './globals.scss';
+@import 'header';
+@import 'container';
 
-@import './social-icons.scss';
+@import './page-home.scss';
+@import './page-services.scss';
+@import './page-about.scss';
+@import 'page_work';
+
+@import 'site-logo';
+@import 'nav-list';
+@import 'nav-item';
+@import 'nav_link';
+@import 'site-nav';
+
+@import 'social-icons';
