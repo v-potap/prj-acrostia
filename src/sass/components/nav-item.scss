@@ -1,8 +1,14 @@
 .nav-item {
-  width: 100px;
-  height: 70px;
-  padding-top: 14px;
-  text-align: center;
+    width: 100px;
+    height: 70px;
+    padding-top: 14px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        border-radius: 0 0 5px 5px;
+        background-color: rgba(256, 256, 256, 0.3);
+      }
 
   &:hover {
     border-radius: 0 0 5px 5px;
