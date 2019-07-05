@@ -545,6 +545,7 @@ template {
 
 .site-nav {
   width: 540px;
+  padding-left: 40px;
 }
 
 .social-icons-list {
@@ -596,4 +597,240 @@ template {
 .icon60x60 {
   width: 60px;
   height: 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-logo {
+  font-size: 50px;
+  font-family: "Damion";
+  color: white;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.nav-item {
+  width: 100px;
+  height: 70px;
+  padding-top: 14px;
+  text-align: center;
+}
+
+.nav-item:hover {
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav_link {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Lato";
+  color: white;
+  line-height: 3.333;
+  text-align: right;
+}
+
+.site-nav {
+  width: 540px;
+  padding-left: 40px;
+}
+
+.page_work {
+  background-image: url("../../images/layer_work.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  max-width: auto;
+}
+
+.section-title {
+  margin-top: 120px;
+  margin-bottom: 34px;
+  font-size: 60px;
+  font-family: "Lato Light";
+  color: white;
+  text-transform: uppercase;
+  line-height: 0.967;
+  text-align: center;
+}
+
+.section-work {
+  margin-bottom: 108px;
+}
+
+.section-desription {
+  font-size: 14px;
+  font-family: "Lato";
+  color: white;
+  line-height: 1.714;
+  text-align: center;
+  padding: 0 24px;
+  margin-bottom: 60px;
+}
+
+.portfolio {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.portfolio::before {
+  content: '';
+  display: block;
+  background-color: #94b963;
+  width: 1100px;
+  height: 1px;
+  margin-bottom: 32px;
+}
+
+.portfolio::after {
+  content: '';
+  display: block;
+  background-color: #94b963;
+  width: 1100px;
+  height: 1px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.portfolio__title {
+  font-size: 20px;
+  font-family: "Lato";
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.portfolio-nav {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: 540px;
+  justify-content: space-between;
+}
+
+.portfolio-nav__button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-family: "Lato";
+  color: white;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.portfolio-nav__button:nth-last-of-type(1) {
+  margin-right: 28px;
+}
+
+.portfolio-nav__button:nth-of-type(1) {
+  margin-left: 70px;
+}
+
+.portfolio-nav__button--active {
+  border-radius: 4px;
+  background-color: #f5c149;
+  width: 110px;
+  height: 35px;
+}
+
+.portfolio-images {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.images-item {
+  position: relative;
+  z-index: 1;
+  width: 260px;
+  font-size: 0;
+}
+
+.images-item:hover .images-item__img {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.images-item:hover .images-item_background {
+  opacity: 1;
+}
+
+.images-item:not(:nth-last-of-type(-n+4)) {
+  margin-bottom: 20px;
+}
+
+.images-item__description {
+  font-size: 14px;
+  font-family: "Lato";
+  height: 50px;
+  background-color: #eeeeee;
+  color: #727272;
+  text-transform: uppercase;
+  line-height: 4.143;
+  text-align: center;
+}
+
+.images-item__arrow {
+  position: absolute;
+  bottom: 49px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 37px;
+  height: 19px;
+  z-index: 4;
+  fill: #eeeeee;
+}
+
+.images-item_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(61, 77, 41, 0.702);
+  opacity: 0;
+  width: 260px;
+  height: 200px;
+  z-index: 3;
+}
+
+.cross_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+.cross_button img {
+  width: 23px;
+  height: 24px;
 }
