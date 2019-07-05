@@ -10,4 +10,8 @@
         background-color: rgba(256, 256, 256, 0.3);
       }
 
+  &:hover {
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(256, 256, 256, 0.3);
+  }
 }

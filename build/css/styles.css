@@ -423,6 +423,22 @@ template {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+.page-home,
+.page-services,
+.page-about {
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  max-width: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -437,6 +453,117 @@ template {
   overflow: hidden;
 }
 
+.header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  align-items: flex-end;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-home {
+  background-image: url("../../images/bg-home-pic@1X.png"), url("../images/bg-home@1X.png");
+}
+
+.page-home .nav-item:nth-of-type(1) {
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.section-home {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.page-services {
+  background-image: url("../../images/bg-services-pic@1X.png"), url("../images/bg-services@1X.png");
+}
+
+.page-services .nav-item:nth-of-type(2) {
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.page-about {
+  background-image: url("../../images/bg-about-pic@1X.png"), url("../images/bg-about@1X.png");
+}
+
+.page-about .nav-item:nth-of-type(3) {
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.page_work {
+  background-image: url("../../images/layer_work.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  max-width: auto;
+}
+
+.site-logo {
+  font-size: 50px;
+  font-family: "Damion";
+  color: white;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.nav-item {
+  width: 100px;
+  height: 70px;
+  padding-top: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-item:hover {
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav_link {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Lato";
+  color: white;
+  line-height: 3.333;
+  text-align: right;
+}
+
+.site-nav {
+  width: 540px;
+  padding-left: 40px;
+}
+
 .social-icons-list {
   list-style: none;
   display: -webkit-box;
@@ -444,18 +571,50 @@ template {
   -webkit-box-pack: justify;
   justify-content: space-between;
   width: 100%;
-  background: #000;
-  /*DELETE LATER*/
 }
 
 .social-icons-list__item {
+  position: relative;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.social-icons-list__item:nth-of-type(1):hover {
+  background: #4169a0;
+}
+
+.social-icons-list__item:nth-of-type(2):hover {
+  background: #73c8d7;
+}
+
+.social-icons-list__item:nth-of-type(3):hover {
+  background: #e15a64;
+}
+
+.social-icons-list__item:nth-of-type(4):hover {
+  background: #3c5faf;
+}
+
+.social-icons-list__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
   fill: white;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.icon30x30 {
+  width: 30px;
+  height: 30px;
+}
+
+.icon60x60 {
+  width: 60px;
+  height: 60px;
 }
 
 .header {
@@ -498,6 +657,11 @@ template {
   padding-top: 14px;
   text-align: center;
   cursor: pointer;
+}
+
+.nav-item:hover {
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .nav-item:hover {
@@ -656,11 +820,12 @@ template {
   z-index: 1;
   width: 260px;
   font-size: 0;
+  overflow: hidden;
 }
 
 .images-item:hover .images-item__img {
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
 }
 
 .images-item:hover .images-item_background {
