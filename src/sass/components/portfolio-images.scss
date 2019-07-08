@@ -78,3 +78,27 @@
   }
 
 }
+
+@media screen and (max-width: 1199px) {
+  .portfolio-images {
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .images-item {
+    margin: 0 10px;
+  }
+
+  .images-item:not(:nth-last-of-type(-n+2)) {
+     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-images {
+    justify-content: center;
+  }
+  .images-item:not(:nth-last-of-type(1)) {
+    margin-bottom: 20px;
+ }
+}

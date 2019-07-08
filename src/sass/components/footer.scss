@@ -8,3 +8,9 @@
 .footer-socials {
     width: 360px;
 }
+
+@media screen and (max-width: 360px) {
+    .footer-socials {
+        width: 320px;
+    }
+}
