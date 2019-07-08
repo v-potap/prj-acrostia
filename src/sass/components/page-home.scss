@@ -1,17 +1,104 @@
 .page-home {
   @extend %page__background--responsive;
 
-  background-image: url('../../images/bg-home-pic@1X.png'),
+  background-image: url('../images/bg-home-pic@1X.png'),
     url('../images/bg-home@1X.png');
+
+  position: relative;
 
   .nav-item:nth-of-type(1) {
     border-radius: 0 0 5px 5px;
-    background-color: rgba(256, 256, 256, 0.3);
+    background-color: rgba(256, 256, 256, 0.1);
   }
 }
 
 .section-home {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
   display: flex;
-  flex-direction: column;
+
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
   height: 100vh;
+
+  z-index: -1;
+
+  .slider__content {
+    max-width: 76.4%;
+    max-height: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 34px 70px 34px 40px;
+
+    background-color: $color__slider-content--background;
+
+    .content__message {
+      font-family: 'Lato';
+      font-style: normal;
+      padding: 0 10px;
+      vertical-align: center;
+      color: $color__slider-content--foreground;
+    }
+
+    .message1 {
+      flex: 1 1 363px;
+      width: 43.2%;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 50px;
+      text-align: right;
+    }
+
+    .message2 {
+      flex: 1 1 346px;
+      width: 41.2%;
+      font-weight: 900;
+      font-size: 104px;
+      line-height: 104px;
+    }
+  }
+
+  .slider__button--back,
+  .slider__button--forward {
+    width: 34px;
+    height: 56px;
+    background: none;
+    cursor: pointer;
+    border: none;
+  }
+
+  .slider-nav {
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    &__point {
+      display: block;
+      margin-right: 40px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $color__slider-content--background;
+
+      &:nth-of-type(3) {
+        margin-right: 0;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $color__slider-content--background-hovered;
+        cursor: pointer;
+      }
+    }
+  }
 }
