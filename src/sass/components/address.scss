@@ -15,6 +15,7 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
+  
 }
 
 .address__title {
@@ -73,7 +74,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 80px;
-  
+
   &__textarea {
     border-radius: 4px;
     background-color: rgb(104, 160, 151);
@@ -125,7 +126,7 @@
 
 .input__email {
   border-radius: 4px;
-  background-color: rgb(246, 246, 246);
+  background-color: #68a097;
   width: 260px;
   height: 40px;
   border: none;
@@ -136,6 +137,15 @@
     font-family: "Lato";
     color: rgb(130, 200, 189);
     line-height: 1.313;
+  }
+
+
+}
+
+input, textarea {
+  transition: .2s linear;
+  &:focus {
+    background: #f6f6f6;
   }
 }
 
@@ -153,4 +163,62 @@
   line-height: 0.808;
   text-transform: uppercase;
 
+}
+
+@media screen and (max-width: 1100px) {
+  .contacts {
+    flex-direction: column;
+  }
+
+  .feedback,
+  .address {
+    margin: 0 auto;
+  }
+
+  .address {
+    width: 540px;
+    margin-bottom: 40px;
+  }
+
+  .address-details {
+    width: 540px;
+  }
+
+}
+
+@media screen and (max-width: 590px) {
+  .address {
+    width: 260px;
+  }
+
+  .address__title {
+    text-align: center;
+  }
+
+  .address img {
+    display: none;
+  }
+
+  .address-details {
+    width: 260px;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+
+  .contact-list {
+    margin-bottom: 20px;
+  }
+
+  .name_email {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    & .input__name {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .form-feedback__textarea {
+    width: 260px;
+  }
 }

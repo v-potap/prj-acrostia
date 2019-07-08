@@ -1,6 +1,31 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-       
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 699px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-nav {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    position: relative;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
 }
