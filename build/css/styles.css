@@ -439,6 +439,10 @@ template {
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 img {
   display: block;
   width: 100%;
@@ -457,6 +461,12 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .header {
@@ -565,7 +575,6 @@ img {
 
 .site-nav {
   width: 540px;
-  padding-left: 40px;
 }
 
 .social-icons-list {
@@ -621,6 +630,10 @@ img {
   height: 60px;
 }
 
+.site-section {
+  padding-top: 130px;
+}
+
 .menu-btn {
   display: block;
   background-color: transparent;
@@ -673,12 +686,6 @@ img {
   align-items: flex-end;
 }
 
-.container {
-  max-width: 1140px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
 .site-logo {
   font-size: 50px;
   font-family: "Damion";
@@ -725,7 +732,6 @@ img {
 
 .site-nav {
   width: 540px;
-  padding-left: 40px;
 }
 
 .page_work {
@@ -747,7 +753,6 @@ img {
 }
 
 .section-title {
-  margin-top: 120px;
   margin-bottom: 34px;
   font-size: 60px;
   font-family: "Lato Light";
@@ -761,7 +766,7 @@ img {
   margin-bottom: 108px;
 }
 
-.section-desription {
+.section-description {
   font-size: 14px;
   font-family: "Lato";
   color: white;
@@ -858,6 +863,7 @@ img {
   width: 260px;
   font-size: 0;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .images-item:hover .images-item__img {
@@ -908,6 +914,10 @@ img {
 }
 
 .cross_button {
+  background-image: url("../../images/section_work/cross.png");
+  background-size: 23px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -918,11 +928,12 @@ img {
   border-radius: 50%;
   border: 2px solid white;
   background-color: transparent;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
-.cross_button img {
-  width: 23px;
-  height: 24px;
+.cross_button:hover {
+  background-color: #776868;
 }
 
 .contacts {
@@ -954,7 +965,6 @@ img {
   flex-flow: column wrap;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  padding-right: 40px;
 }
 
 .address__title {
@@ -1131,7 +1141,7 @@ img {
 
 .input__email {
   border-radius: 4px;
-  background-color: #f6f6f6;
+  background-color: #68a097;
   width: 260px;
   height: 40px;
   border: none;
@@ -1171,6 +1181,17 @@ img {
   font-family: "Lato";
   color: #82c8bd;
   line-height: 1.313;
+}
+
+input,
+textarea {
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+input:focus,
+textarea:focus {
+  background: #f6f6f6;
 }
 
 .button_sendfeedback {
@@ -1342,9 +1363,13 @@ img {
 
   .address-details {
     width: 260px;
-    -webkit-box-pack: center;
-    justify-content: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
     margin: 0 auto;
+  }
+
+  .contact-list {
+    margin-bottom: 20px;
   }
 
   .name_email {
