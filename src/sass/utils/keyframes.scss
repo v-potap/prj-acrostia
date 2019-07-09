@@ -1,0 +1,13 @@
+@keyframes banner-crashes {
+  50% {
+    transform-origin: 0 100%;
+    transform: rotate(180deg);
+    opacity: 0.5;
+  }
+
+  100% {
+    // transform: rotate(-60deg);
+    //   transform: rotate(360deg);
+    opacity: 1;
+  }
+}
