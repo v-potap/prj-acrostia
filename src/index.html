@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Placeholder title</title>
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Placeholder title</title>
-  <link rel="stylesheet" href="css/styles.min.css" />
-</head>
+  <body class="page-home">
+    //= html/header.html
 
-<body class="page-home">
-  //= html/header.html
+    <h2 class="visually-hidden">Acrostia Home</h2>
 
-<h2 class="visually-hidden">Acrostia Home</h2>
-
-  <section class="section-home container">
-      <div class="slider">
-          <button class="slider__button--back">Back</button>
-          <div class="slider__content">
-              <p>GOOD IDEAS comes</p>
-              <p>FIRST!</p>
-          </div>
-          <button class="slider__button--forward">Forward</button>
+    <section class="section-home">
+      <button class="slider__button--back">
+        <span class="visually-hidden">Back</span>
+        <img src="images/arrow-left@1X.png" alt="arrow left" />
+      </button>
+      <div class="slider__content">
+        <p class="content__message message1">GOOD IDEAS comes</p>
+        <p class="content__message message2">FIRST!</p>
       </div>
-  
-  </section>
+      <button class="slider__button--forward">
+        <span class="visually-hidden">Forward</span>
+        <img src="images/arrow-right@1X.png" alt="arrow right" />
+      </button>
 
-</body>
-
+      <ul class="slider-nav">
+        <li class="slider-nav__point"><span class="visually-hidden">slide 1</span></li>
+        <li class="slider-nav__point"><span class="visually-hidden">slide 2</span></li>
+        <li class="slider-nav__point"><span class="visually-hidden">slide 3</span></li>
+      </ul>
+    </section>
+  </body>
 </html>

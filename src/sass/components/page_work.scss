@@ -1,8 +1,13 @@
 .page_work {
-    background-image: url('../../images/layer_work.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 100%;
-    max-width: auto;
+  background-image: url('../../images/layer_work.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  max-width: auto;
+
+  .nav-item:nth-of-type(4) {
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(256, 256, 256, 0.1);
+  }
 }
