@@ -14,7 +14,7 @@
   <main>
     <section class="site-section section-contacts container">
       <h2 class="section-title">contact us</h2>
-      <p class="section-desription">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur
+      <p class="section-description">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur
         posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo
         est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat
         posuere quis.</p>
@@ -47,17 +47,20 @@
                 </li>
               </ul>
             </div>
-            <img src="./images/contacts__map.jpg" alt="acrostia on map" width="260" height="220">
+            <div style="width:260"><iframe width="260" height="220"
+                src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a
+                  href="https://www.maps.ie/map-my-route/">Create route map</a></iframe></div>
           </div>
         </div>
         <div class="feedback">
           <h3 class="address__title">Ask a question</h3>
           <form class="form-feedback" action="#">
             <div class="feedback-inputs">
-              <d class="name_email">
+              <div class="name_email">
                 <input class="input__name" type="text" name="Name" placeholder='Name'>
                 <input class="input__email" type="email" name="Email" id="" placeholder="Email" autofocus>
-              </d>
+              </div>
               <textarea class="form-feedback__textarea" name="comments" id="" cols="30" rows="10"
                 placeholder="Your question"></textarea>
             </div>
@@ -68,7 +71,9 @@
     </section>
   </main>
   <footer class="footer">
-
+    <div class="footer-socials container">
+      //= html/social-icons60x60.html
+    </div>
   </footer>
 </body>
 

@@ -15,6 +15,7 @@
   width: 260px;
   font-size: 0;
   overflow: hidden;
+  cursor: pointer;
 
   &:hover .images-item__img {
     filter: blur(5px);
@@ -59,10 +60,13 @@
   width: 260px;
   height: 200px;
   z-index: 3;
-
 }
 
 .cross_button {
+  background-image: url('../../images/section_work/cross.png');
+  background-size: 23px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,9 +76,33 @@
   border-radius: 50%;
   border: 2px solid rgb(255, 255, 255);
   background-color: transparent;
-  & img{
-    width: 23px;
-    height: 24px;
+  transition: .3s linear;
+  &:hover {
+    background-color: #776868;
+  }
+  
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio-images {
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .images-item {
+    margin: 0 10px;
   }
 
+  .images-item:not(:nth-last-of-type(-n+2)) {
+     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-images {
+    justify-content: center;
+  }
+  .images-item:not(:nth-last-of-type(1)) {
+    margin-bottom: 20px;
+ }
 }

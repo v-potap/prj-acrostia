@@ -5,9 +5,11 @@
 @import './constatnts/constants';
 @import './utils/utils';
 @import './base';
-@import './components/components';
-@import './components/header';
 @import './components/container';
+@import './components/components';
+@import './components/site-section';
+@import './components/hamburger-menu';
+@import './components/header';
 @import './components/site-logo';
 @import './components/nav-list';
 @import './components/nav-item';
@@ -17,9 +19,8 @@
 @import './components/page_contacts';
 @import './components/section-title';
 @import './components/section-work';
-@import './components/section-desription';
+@import './components/section-description';
 @import './components/portfolio';
 @import './components/portfolio-images';
 @import './components/address';
 @import './components/footer';
-

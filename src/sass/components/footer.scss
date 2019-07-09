@@ -1,4 +1,16 @@
 .footer {
     background-color: #68a097;
-    height: 100px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-socials {
+    width: 360px;
+}
+
+@media screen and (max-width: 360px) {
+    .footer-socials {
+        width: 320px;
+    }
 }
