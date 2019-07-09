@@ -102,3 +102,47 @@
     }
   }
 }
+
+@media screen and (max-width: 991px) {
+  .section-home {
+    // height: 100vh;
+
+    .slider__content {
+      flex-direction: column;
+      min-height: 340px;
+      justify-content: center;
+      text-align: center;
+      padding: 34px 0px 34px 0px;
+
+      .message1,
+      .message2 {
+        width: 100%;
+        align-content: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .section-home {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .content__message {
+    padding: 0;
+    vertical-align: center;
+  }
+
+  .message1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .message2 {
+    font-size: 5px;
+    line-height: 5px;
+  }
+}
