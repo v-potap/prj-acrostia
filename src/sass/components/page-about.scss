@@ -1,6 +1,6 @@
 .page-about {
   @extend %page__background--responsive;
-  background-image: url('../../images/bg-about-pic@1X.png'),
+  background-image: url('../images/bg-about-pic@1X.png'),
     url('../images/bg-about@1X.png');
 
   .nav-item:nth-of-type(3) {
@@ -8,9 +8,10 @@
     background-color: rgba(256, 256, 256, 0.1);
   }
 
-  &__title.section-title {
+  &__title {
     font-family: 'Lato';
     font-weight: 300;
+    padding-top: 130px;
   }
 
   &__banner {
@@ -86,19 +87,6 @@
         content: url('../images/user-athover@1X.png');
       }
     }
-
-    // &--details {
-    //   position: relative;
-    // }
-
-    // &--overlay {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   background: #000;
-    // }
 
     &--img-set {
       margin: 0 auto;
