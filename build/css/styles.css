@@ -423,12 +423,11 @@ template {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.page-home,
 .page-services,
 .page-about {
-  background-position: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: center;
+  background-size: cover;
   max-height: 100%;
   max-width: auto;
 }
@@ -507,6 +506,11 @@ img {
 }
 
 .page-home {
+  background-position: contain;
+  background-repeat: no-repeat;
+  background-size: center;
+  max-height: 100%;
+  max-width: auto;
   background-image: url("../images/bg-home-pic@1X.png"), url("../images/bg-home@1X.png");
   position: relative;
 }
