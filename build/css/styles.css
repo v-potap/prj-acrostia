@@ -571,7 +571,7 @@ img {
 }
 
 .slider__content {
-  width: 76.4%;
+  width: 55%;
   height: 20vh;
   display: flex;
   justify-content: space-around;
@@ -842,12 +842,13 @@ img {
   border: 4px solid #a087a0;
   border-radius: 50%;
   background: white;
+  padding: 3px;
 }
 
 .team-list__item--img-set__pic {
   margin: 0 auto;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   border-radius: 50%;
   top: 50%;
