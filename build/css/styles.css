@@ -427,7 +427,7 @@ template {
 .page-about {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%, cover;
   max-height: 100%;
   max-width: auto;
 }
@@ -557,13 +557,10 @@ img {
 }
 
 .page-home {
-  background-position: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: center;
-  max-height: 100%;
-  max-width: auto;
+  background-size: cover;
   background-image: url("../images/bg-home-pic@1X.png"), url("../images/bg-home@1X.png");
-  position: relative;
 }
 
 .page-home .nav-item:nth-of-type(1) {
@@ -572,25 +569,34 @@ img {
 }
 
 .section-home {
+<<<<<<< HEAD
+=======
   position: absolute;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   display: -webkit-box;
+>>>>>>> master
   display: flex;
   justify-content: space-around;
   -webkit-box-align: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 71px);
   z-index: -1;
 }
 
+<<<<<<< HEAD
+.slider__content {
+  width: 76.4%;
+  height: 20vh;
+=======
 .section-home .slider__content {
   max-width: 76.4%;
   max-height: 170px;
   display: -webkit-box;
+>>>>>>> master
   display: flex;
   justify-content: space-around;
   -webkit-box-align: center;
@@ -599,6 +605,10 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+<<<<<<< HEAD
+.slider__button--back,
+.slider__button--forward {
+=======
 .section-home .slider__content .content__message {
   font-family: 'Lato';
   font-style: normal;
@@ -628,6 +638,7 @@ img {
 
 .section-home .slider__button--back,
 .section-home .slider__button--forward {
+>>>>>>> master
   width: 34px;
   height: 56px;
   background: none;
@@ -635,7 +646,7 @@ img {
   border: none;
 }
 
-.section-home .slider-nav {
+.slider-nav {
   position: fixed;
   bottom: 0;
   margin: 0 auto;
@@ -644,10 +655,10 @@ img {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 7%;
 }
 
-.section-home .slider-nav__point {
+.slider-nav__point {
   display: block;
   margin-right: 40px;
   width: 20px;
@@ -656,14 +667,39 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.section-home .slider-nav__point:nth-of-type(3) {
+.slider-nav__point:nth-of-type(3) {
   margin-right: 0;
 }
 
-.section-home .slider-nav__point:hover,
-.section-home .slider-nav__point:focus {
+.slider-nav__point:hover,
+.slider-nav__point:focus {
   background-color: #73c8d7;
   cursor: pointer;
+}
+
+.content__message {
+  font-family: 'Lato';
+  font-style: normal;
+  padding: 0 10px;
+  vertical-align: center;
+  color: #73c8d7;
+}
+
+.message1 {
+  flex: 1 1 363px;
+  width: 43.2%;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: right;
+}
+
+.message2 {
+  flex: 1 1 346px;
+  width: 41.2%;
+  font-weight: 900;
+  font-size: 104px;
+  line-height: 104px;
 }
 
 .page-services {
@@ -1593,22 +1629,39 @@ textarea:focus {
 }
 
 @media screen and (max-width: 991px) {
+<<<<<<< HEAD
+  .slider__content {
+    flex-direction: column;
+=======
   .section-home .slider__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
     min-height: 340px;
     -webkit-box-pack: center;
+>>>>>>> master
     justify-content: center;
-    text-align: center;
-    padding: 34px 0px 34px 0px;
+    padding: 22px;
+    margin: 0 auto;
+    height: 15vh;
   }
 
-  .section-home .slider__content .message1,
-  .section-home .slider__content .message2 {
-    width: 100%;
-    align-content: center;
+  .message1,
+  .message2 {
     text-align: center;
+    align-content: center;
+    height: 33%;
+    width: 100%;
+  }
+
+  .message1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .message2 {
+    font-size: 68px;
+    line-height: 68px;
   }
 
   .services-list__item {
@@ -1619,6 +1672,10 @@ textarea:focus {
   .services-list__item:nth-of-type(1),
   .services-list__item:nth-of-type(2) {
     margin-bottom: 16px;
+  }
+
+  .page-about__banner {
+    width: 50%;
   }
 
   .team-list__item {
@@ -1762,6 +1819,8 @@ textarea:focus {
 }
 
 @media screen and (max-width: 575px) {
+<<<<<<< HEAD
+=======
   .section-home {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1786,6 +1845,7 @@ textarea:focus {
     line-height: 5px;
   }
 
+>>>>>>> master
   .services-list__item {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
@@ -1795,6 +1855,10 @@ textarea:focus {
   .services-list__item:nth-of-type(2),
   .services-list__item:nth-of-type(3) {
     margin-bottom: 16px;
+  }
+
+  .page-about__banner {
+    width: 100%;
   }
 
   .team-list__item {
