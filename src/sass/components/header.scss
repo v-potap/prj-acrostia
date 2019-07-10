@@ -4,6 +4,53 @@
   align-items: flex-end;
 }
 
+.site-logo {
+  font-size: 50px;
+  font-family: "Damion";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.site-nav {
+  width: 540px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.nav-item {
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: $work-nav__margin-right;
+
+  &:hover {
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(256, 256, 256, 0.3);
+
+  }
+}
+
+.nav_link {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+  line-height: 3.333;
+  text-align: right;
+  padding-top: 11px;
+  display: block;
+  text-align: center;
+}
+
+
+
 @media screen and (max-width: 699px) {
   .header {
     flex-direction: column;
