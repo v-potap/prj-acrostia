@@ -124,13 +124,24 @@
   }
 
   .message1 {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 
   .message2 {
-    font-size: 68px;
-    line-height: 68px;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }
 
+@media screen and (max-width: 575px) {
+  .message1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .message2 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
