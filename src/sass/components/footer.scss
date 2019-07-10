@@ -3,10 +3,10 @@
     min-height: 150px;
     display: flex;
     align-items: center;
-}
-
-.footer-socials {
-    width: 360px;
+    .social-icons-list {
+        width: 360px;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 360px) {
