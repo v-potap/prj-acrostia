@@ -102,12 +102,13 @@
         border: 4px solid $color__team-item--pic-bd;
         border-radius: 50%;
         background: $color__team-item--pic-bg;
+        padding: 3px;
       }
 
       &__pic {
         margin: 0 auto;
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
         position: absolute;
         border-radius: 50%;
         top: 50%;
