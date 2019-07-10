@@ -15,7 +15,7 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  
+
 }
 
 .address__title {
@@ -73,7 +73,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 80px;
 
   &__textarea {
     border-radius: 4px;
@@ -140,8 +139,10 @@
   }
 }
 
-input, textarea {
+input,
+textarea {
   transition: .2s linear;
+
   &:focus {
     background: #f6f6f6;
   }
@@ -211,11 +212,12 @@ input, textarea {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+
     & .input__name {
       margin-bottom: 20px;
     }
   }
-  
+
   .form-feedback__textarea {
     width: 260px;
   }
